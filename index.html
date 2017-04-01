@@ -1,0 +1,29 @@
+<html ng-app="app"> 
+<head>
+	<title></title>
+<script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+<script src= "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+			<ul class="nav nav-tabs">
+				<li><a ui-sref="/#" href="#"><b>Home</b></a></li>
+				<li><a ui-sref="produto" href="#">Produtos</a></li>
+			</ul>
+<ui-view>
+</ui-view>
+</body>
+
+<script src= "Modulo/Produto/produto.module.js"></script>
+<script src= "Modulo/Produto/produto.controller.js"></script>
+<script src= "Modulo/Produto/produto.service.js"></script>
+<script src= "Modulo/Produto/produto.router.js"></script>
+<script src= "Modulo/Produto/produto.controller.cadastrar.js"></script>
+<script src= "Modulo/Produto/produto.controller.editar.js"></script>
+
+<script src= "app.js"></script>
+</html>

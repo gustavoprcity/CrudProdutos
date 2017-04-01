@@ -1,0 +1,21 @@
+
+<div class="container">
+  <h2>Cadastro de Produto</h2>
+  <p>Cadastre seu produto!</p>
+  <form ng-submit = "alterarProduto(produto)">
+    <div class="form-group">
+      <label for="usr">Código</label>
+      <input type="text" class="form-control"  ng-disabled="true"   name = "codigo" ng-model = "produto.codigo">
+    </div>
+      <div class="form-group">
+      <label for="usr">Descrição</label>
+      <input type="text" class="form-control"  name = "nome" ng-model = "produto.nome">
+    </div>
+    <div class="form-group">
+      <label for="usr">Preço</label>
+      <input type="text" class="form-control"  name = "preco" ng-model = "produto.preco">
+    </div>
+    	<button class="btn btn-danger" ng-click="cancelar()">Cancelar</button>
+		<button class="btn btn-success" type = "submit">Salvar Produto </button>
+  </form>
+</div>
